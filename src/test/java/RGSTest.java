@@ -54,19 +54,19 @@ public class RGSTest {
         WebElement forCompany = menu.findElement(By.xpath("//a[contains(text(), 'Компаниям')]"));
         forCompany.click();
 
-        Assert.assertEquals("https://www.rgs.ru/products/juristic_person/index.wbp", webDriver.getCurrentUrl());
+        Assert.assertEquals("Корпоративное страхование для компаний | Росгосстрах", webDriver.getTitle());
 
         //Кликнуть по "Здоровье"
         WebElement health = webDriver.findElement(By.xpath("//a[contains(text(), 'Здоровье')][contains(@class,'list')]"));
         health.click();
 
-        Assert.assertEquals("https://www.rgs.ru/products/juristic_person/health/index.wbp", webDriver.getCurrentUrl());
+        Assert.assertEquals("ДМС для сотрудников - добровольное медицинское страхование от Росгосстраха", webDriver.getTitle());
 
         //Кликнуть по "ДМС"
         WebElement DMS = webDriver.findElement(By.xpath("//a[contains(text(), 'Добровольное')]"));
         DMS.click();
 
-        Assert.assertEquals("https://www.rgs.ru/products/juristic_person/health/dms/index.wbp", webDriver.getCurrentUrl());
+        Assert.assertEquals("Добровольное медицинское страхование в Росгосстрахе", webDriver.getTitle());
 
         //Кликнуть по "Отправить заявку"
         WebElement send = webDriver.findElement(By.xpath("//a[contains(text(), 'Отправить заявку')]"));
