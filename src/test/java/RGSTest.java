@@ -47,7 +47,7 @@ public class RGSTest {
     public void rgsTest() {
 
         //Кликнуть по "Меню"
-        WebElement menu = webDriver.findElement(By.xpath("//a[@data-toggle='dropdown'][@class='hidden-xs']"));
+        WebElement menu = webDriver.findElement(By.xpath("//a[@data-toggle='dropdown'][contains(text(),'Меню')]"));
         menu.click();
 
         //Кликнуть по "Компаниям"
